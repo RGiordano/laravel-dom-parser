@@ -1,0 +1,38 @@
+{
+    "name": "rgiordano/laravel-dom-parser",
+    "description": "Wrapper to PHP Simple HTML DOM Parser to Laravel",
+    "keywords": ["laravel", "dom", "parser"],
+    "homepage": "https://github.com/rgiordano/laravel-dom-parser",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "S.C. Chen",
+            "homepage": "http://sourceforge.net/projects/simplehtmldom/"
+        },
+        {
+            "name": "Raphael Giordano",
+            "email": "raphaelgns@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "ext-mbstring": "*",
+        "illuminate/support": "5.1.x|5.2.x|5.3.x|5.4.x|5.5.x|5.6.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "RGiordano\\DomParser\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RGiordano\\DomParser\\ServiceProvider"
+            ],
+            "aliases": {
+                "SimpleHtmlDom": "RGiordano\\DomParser\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
